@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/space-img.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 4.8%;
+
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: white;
+}
+.content p{
+    padding-bottom: 10px 
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.content h1 span{
+    color: aqua;
+}
+.content button{
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    color: aqua;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin: 7px 28px;
+}
+.launch-time{
+    display: flex;
+    margin: 21px;
+}
+.launch-time div{
+    flex-basis: 100px;
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: -6px;
+}
+.rocket{
+    height: 200px;
+    width: 180px;
+    position: absolute;
+    bottom: 10px;
+    right: 7%;
+    animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 2;
+    }
+}
